@@ -1,0 +1,276 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    max-width: 940px;
+    height: 100vh;
+}
+
+.conteudo-topo {
+    /* border: 1px dashed #555; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.home-foto {
+    /* border: 1px dashed #555; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.home-foto img {
+    height: 45rem;
+}
+
+.home-foto-frente {
+    z-index: 2;
+    position: fixed;
+}
+
+.home-foto-back {
+    z-index: 1;
+    position: relative;
+    top: -1rem;
+    left: -7rem;
+}
+
+.coluna-login {
+    /* border: 1px dashed #555; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    max-width: 350px;
+    min-height: 40rem;
+}
+
+.bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5rem 0;
+    border: 1px solid lightgray;
+}
+
+.bloco:nth-child(1){
+    min-height: 20rem;
+}
+
+.bloco:nth-child(2){
+    min-height: 7rem;
+}
+
+.instagram-logo {
+     max-height: 3.5rem;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.foto-perfil img {
+    border-radius: 50%;
+    height: 6.25rem;
+    margin-top: 1rem;
+}
+
+.botao-login {
+    background-color: #0095f6;
+    color: #FFF;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+.botao-remover {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+.nao-eh {
+    color: rgb(160,160,160);
+    font-size: .95rem;
+    padding-top: 1rem;
+}
+
+.nao-eh a {
+    color: #0095f6;
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.get-apps {
+    color: #333;
+    font-size: .95rem;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.get-apps-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.get-apps-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');   
+}
+
+.get-apps-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+.footer {
+    /* border: 1px dashed #555; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 3rem 0;
+}
+
+.footer nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    max-width: 750px;
+    /* border: 1px dashed #555; */
+}
+
+.links-primeiros,
+.links-segundos,
+.links-terceiros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.links-primeiros {
+    width: 95%;
+}
+
+.links-segundos {
+    width: 75%;
+}
+
+.links-terceiros {
+    width: 50%;
+}
+
+.links-primeiros li,
+.links-segundos li,
+.links-terceiros li {
+    list-style: none;
+}
+
+.links-primeiros li,
+.links-segundos li,
+.links-terceiros li, 
+.links-primeiros a,
+.links-segundos a,
+.links-terceiros a{
+    text-decoration: none;
+    font-size: .8rem;
+    color: #999;
+    letter-spacing: .04rem;
+}
+
+@media (max-width: 1024px) {
+    .conteudo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 870px) {
+    body {
+        background-color: #fff;
+    }
+
+    .conteudo {
+        width: 90%;
+    }
+
+    .home-foto {
+        display: none;
+    }
+
+    .coluna-login {
+        width: 100%;
+    }
+
+    .links-primeiros,
+    .links-segundos,
+    .links-terceiros
+     {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .links-primeiros li,
+    .links-segundos li,
+    .links-terceiros li {
+    padding: .5rem;
+    padding-bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .bloco {
+        border: none;
+    }
+}
